@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+        "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<!-- Forms -->
+	<form-beans>
+		<form-bean name="hibernateForm" type="com.epam.task7.form.HibernateForm"></form-bean>
+	</form-beans>
+
+	<!-- Global forwards -->
+	<global-forwards>
+		
+		<forward name="showMainPage" path="/ShowMainPage.do" />
+		<forward name="mainPage" path="mainPage" />
+
+	</global-forwards>
+
+	<!-- Actions -->
+	<action-mappings>
+
+		 <action path="/ShowMainPage" name="hibernateForm" scope="session"
+			type="com.epam.task7.action.HibernateAction" parameter="showMainPage">
+		</action>
+		<!--
+		<action path="/ShowCategories" name="productForm" scope="session"
+			type="com.epam.task6.action.ProductAction" parameter="showCategories">
+		</action> -->
+
+	</action-mappings>
+	
+	<controller processorClass="org.apache.struts.tiles.TilesRequestProcessor" />
+	
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+	</plug-in>
+</struts-config>
