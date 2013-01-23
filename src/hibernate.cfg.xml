@@ -31,7 +31,13 @@
         <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">update</property>
 
-        <mapping resource="News.hbm.xml"/>
+        <mapping resource="com/epam/task7/model/Country.hbm.xml"/>
+        <mapping resource="com/epam/task7/model/City.hbm.xml"/>
+        <mapping resource="com/epam/task7/model/Address.hbm.xml"/>
+        <mapping resource="com/epam/task7/model/Employee.hbm.xml"/>
+        <mapping resource="com/epam/task7/model/Position.hbm.xml"/>
+        <mapping resource="com/epam/task7/model/Company.hbm.xml"/>
+        <mapping resource="com/epam/task7/model/Office.hbm.xml"/>
 
     </session-factory>
 

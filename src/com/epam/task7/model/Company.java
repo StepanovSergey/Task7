@@ -1,14 +1,30 @@
-/**
- * 
- */
 package com.epam.task7.model;
 
 /**
  * @author Siarhei_Stsiapanau
  * 
  */
-public class Company extends Basic {
+public class Company {
+    private int id;
     private String name;
+
+    public Company() {
+    }
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+	return id;
+    }
+
+    /**
+     * @param id
+     *            the id to set
+     */
+    public void setId(int id) {
+	this.id = id;
+    }
 
     /**
      * @return the name
@@ -28,49 +44,14 @@ public class Company extends Basic {
     /*
      * (non-Javadoc)
      * 
-     * @see java.lang.Object#hashCode()
-     */
-    @Override
-    public int hashCode() {
-	final int prime = 31;
-	int result = super.hashCode();
-	result = prime * result + ((name == null) ? 0 : name.hashCode());
-	return result;
-    }
-
-    /*
-     * (non-Javadoc)
-     * 
-     * @see java.lang.Object#equals(java.lang.Object)
-     */
-    @Override
-    public boolean equals(Object obj) {
-	if (this == obj)
-	    return true;
-	if (!super.equals(obj))
-	    return false;
-	if (getClass() != obj.getClass())
-	    return false;
-	Company other = (Company) obj;
-	if (name == null) {
-	    if (other.name != null)
-		return false;
-	} else if (!name.equals(other.name))
-	    return false;
-	return true;
-    }
-
-    /*
-     * (non-Javadoc)
-     * 
      * @see java.lang.Object#toString()
      */
     @Override
     public String toString() {
 	StringBuilder builder = new StringBuilder();
-	builder.append("Company [name=");
+	builder.append("Company ");
 	builder.append(name);
-	builder.append("]");
+	builder.append(" ");
 	return builder.toString();
     }
 

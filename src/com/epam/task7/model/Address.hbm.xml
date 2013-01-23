@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.epam.task7.model">
+
+	<class name="Address" table="ADDRESS">
+		<id name="id" column="id_address">
+			<generator class="sequence-identity">
+				<param name="sequence">ADDRESS_SEQ</param>
+			</generator>
+		</id>
+		<property name="street" type="string" column="STREET"
+			not-null="true" />
+		<property name="building" type="integer" column="BUILDING"
+			not-null="true" />
+		<property name="apartment" type="integer" column="APARTMENT"
+			not-null="false" />
+		<many-to-one name="city" class="com.epam.task7.model.City"
+			column="id_city" fetch="join" not-null="true" foreign-key="ADDRESS_FK" />
+	</class>
+
+</hibernate-mapping>

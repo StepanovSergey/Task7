@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="OFFICE" id="EFF26206-AFBD-156E-518B-EA898BAC6874" directorySegmentName="seg_0">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<logging>YES</logging>
+<segment>857B5DCD-FBF5-BBAC-3B9B-F124A31C657D</segment>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="ID_POSITION" id="6C8BEAB6-D4CA-06F9-E28B-094430D6984B">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="ID_EMPLOYEE" id="AC4D5F15-189C-C53C-1B50-8067609E279A">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="ID_ADDRESS" id="CAAF4229-33B2-932B-2163-FEA69DA974F2">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ColumnProxyOraclev10g" name="ID_COMPANY" id="DAEDEA4C-AE41-8BCA-207C-DB188CFB1A7D">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="OFFICE_PK" id="799992E1-B315-56C2-06EB-1B595D7FF028">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<computeStatistics>YES</computeStatistics>
+<logging></logging>
+<segment>9F7D50A2-BE1A-8687-B381-594D777BEF23</segment>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="OFFICE_FK3" id="0DC74929-03B5-1E99-2137-94D7F2982A7B">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="OFFICE_FK" id="727877B1-1651-8201-CB19-1DE336C20DB9">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="OFFICE_FK2" id="8BA8F3C7-5E8D-4A17-A2CE-8B9FBB364D3A">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="OFFICE_FK3v1" id="E83CE344-22E9-A4E6-A66B-A30648B14FBE">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="OFFICE_PK" id="561EFE2B-858D-A684-85D8-8E2B8FED6446">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<logging></logging>
+<indexSegment>CF655D63-6BDD-ED18-1E0D-534090BF1A62</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+<computeStatistics>YES</computeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

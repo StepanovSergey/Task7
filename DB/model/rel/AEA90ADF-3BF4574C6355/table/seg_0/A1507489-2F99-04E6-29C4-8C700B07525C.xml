@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="A1507489-2F99-04E6-29C4-8C700B07525C" directorySegmentName="seg_0" name="CITY">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>074CE2AB-5752-DD99-B5D2-9DF0AFD05F32</importedID>
+<schemaObject>78C892C7-4F72-376B-CD43-78A781C920DB</schemaObject>
+<pkName>CITY_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID_CITY" id="2426F021-F42C-244B-2997-09EB4956838E">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>BA21D168-64D0-E0E4-C86C-3029D8B34F1B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0FC587FD-1550-21E0-2A8E-3B6D096C6356</domain>
+<delegate>EC57CBB9-8382-3057-BB43-BBEA6582115E</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CCF7B55A-567A-C29B-9529-61C046FB09A8" referredColumn="EC57CBB9-8382-3057-BB43-BBEA6582115E"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="CITY_NAME" id="7DBE0F52-FC65-7310-B4BD-40B7815429ED">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>88A093BB-EE2F-F79D-31BB-9D08994EF9DB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C3B63E47-C2F7-5971-F86C-738D9C0E0A51</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID_COUNTRY" id="B3F57726-D3CC-FCCC-B0FF-D2AA30789EBF">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>F17F3489-2C71-3D42-97BD-115C05C02F32</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0FC587FD-1550-21E0-2A8E-3B6D096C6356</domain>
+<delegate>EC57CBB9-8382-3057-BB43-BBEA6582115E</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC2B55B5-B9FF-0834-2EBF-08CF2474F630" referredColumn="EC57CBB9-8382-3057-BB43-BBEA6582115E"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="2A42801B-CB93-F3E1-99ED-2F75EB407C4D" name="CITY_PK">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>4B916982-B99C-5771-841E-A67F878B2246</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="2426F021-F42C-244B-2997-09EB4956838E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="9D3911DF-CB3E-5E8E-1A26-B7227FE7C571" name="CITY_NAME_UNIQUE">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>F03FCC39-7F18-2B9C-6C75-45F2A2C31361</importedID>
+<indexState>Unique Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="7DBE0F52-FC65-7310-B4BD-40B7815429ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="DD67F4D4-2FCE-A2B5-AC37-A9669B0E7931" name="CITY_PK">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>8C4BA8D5-882A-F289-EC85-7386986EFB7E</importedID>
+<schemaObject>78C892C7-4F72-376B-CD43-78A781C920DB</schemaObject>
+<indexState>Unique Plain Index</indexState>
+<indexColumnUsage>
+<colUsage columnID="2426F021-F42C-244B-2997-09EB4956838E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="47094E24-03D9-C315-D9BB-CADD9D353746" name="CITY_NAME_UNIQUE">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>6D66206F-348F-CC10-3F44-ABF4B2AFDC38</importedID>
+<schemaObject>78C892C7-4F72-376B-CD43-78A781C920DB</schemaObject>
+<indexState>Unique Plain Index</indexState>
+<indexColumnUsage>
+<colUsage columnID="7DBE0F52-FC65-7310-B4BD-40B7815429ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="DCFB91AE-FA1E-D5D2-CCC9-E4C7B994DD5E" name="CITY_FK">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="2426F021-F42C-244B-2997-09EB4956838E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="14DE44F5-1667-A4AF-27BA-1F100445D9E2" name="FK1F916B956985FD">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-23 15:54:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="B3F57726-D3CC-FCCC-B0FF-D2AA30789EBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

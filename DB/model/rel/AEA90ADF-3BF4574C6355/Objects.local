@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="SchemaObject" objectID="78C892C7-4F72-376B-CD43-78A781C920DB" name="SYSTEM" seqName="seg_0"/>
+   <object objectType="Table" objectID="2865FBD7-5138-B160-CC5A-9F59395A59CB" name="ADDRESS" seqName="seg_0"/>
+   <object objectType="Table" objectID="A1507489-2F99-04E6-29C4-8C700B07525C" name="CITY" seqName="seg_0"/>
+   <object objectType="Table" objectID="3C1633CD-D75C-0E25-7708-636B0F2F1E95" name="COMPANY" seqName="seg_0"/>
+   <object objectType="Table" objectID="0798C5A8-6BBA-02C4-AF9B-8E16C6BF64A7" name="COUNTRY" seqName="seg_0"/>
+   <object objectType="Table" objectID="6B38C215-57D3-559F-80D8-64A36EFA1F1F" name="EMPLOYEE" seqName="seg_0"/>
+   <object objectType="Table" objectID="EFF26206-AFBD-156E-518B-EA898BAC6874" name="OFFICE" seqName="seg_0"/>
+   <object objectType="Table" objectID="F05F112D-19A4-2DD5-43E6-208AF6A1FFB6" name="POSITION" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C2A199B1-71DD-D279-FFF6-C2E8425DF3B2" name="ADDRESS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="CCF7B55A-567A-C29B-9529-61C046FB09A8" name="CITY_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="FC2B55B5-B9FF-0834-2EBF-08CF2474F630" name="FK1F916B956985FD" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="EA6FE88F-8212-51BF-3A2A-C9366F21330A" name="FK75C8D6AE6DA33B" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="358BD125-15E3-238E-10F8-27DB27B105FB" name="OFFICE_FK3v1" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="E6EFBE9B-CE8E-9264-8D00-9288E786573D" name="OFFICE_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="E65735E2-F5E8-28C7-20D3-39973430892A" name="OFFICE_FK2" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="4A2B355C-CA81-26F7-02AF-5F1876F62229" name="OFFICE_FK3" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

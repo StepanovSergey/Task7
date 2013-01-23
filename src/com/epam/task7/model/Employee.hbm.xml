@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.epam.task7.model">
+
+	<class name="Employee" table="EMPLOYEE">
+		<id name="id" column="id_employee">
+			<generator class="sequence-identity">
+				<param name="sequence">EMPLOYEE_SEQ</param>
+			</generator>
+		</id>
+		<property name="firstName" type="string" column="FIRSTNAME"
+			not-null="true" />
+		<property name="lastName" type="string" column="LASTNAME"
+			not-null="true" />
+		<one-to-one name="address" class="com.epam.task7.model.Address"
+			fetch="join"></one-to-one>
+
+		<set name="offices" batch-size="100" lazy="false" fetch="join">
+			<key column="id_employee"  />
+			<one-to-many class="com.epam.task7.model.Office" />
+		</set>
+	</class>
+
+</hibernate-mapping>

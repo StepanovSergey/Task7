@@ -1,17 +1,33 @@
-/**
- * 
- */
 package com.epam.task7.model;
 
 /**
  * @author Siarhei_Stsiapanau
  * 
  */
-public class Address extends Basic {
+public class Address {
+    private int id;
     private String street;
     private int building;
     private int apartment;
     private City city;
+
+    public Address() {
+    }
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+	return id;
+    }
+
+    /**
+     * @param id
+     *            the id to set
+     */
+    public void setId(int id) {
+	this.id = id;
+    }
 
     /**
      * @return the street
@@ -76,67 +92,21 @@ public class Address extends Basic {
     /*
      * (non-Javadoc)
      * 
-     * @see java.lang.Object#hashCode()
-     */
-    @Override
-    public int hashCode() {
-	final int prime = 31;
-	int result = super.hashCode();
-	result = prime * result + apartment;
-	result = prime * result + building;
-	result = prime * result + ((city == null) ? 0 : city.hashCode());
-	result = prime * result + ((street == null) ? 0 : street.hashCode());
-	return result;
-    }
-
-    /*
-     * (non-Javadoc)
-     * 
-     * @see java.lang.Object#equals(java.lang.Object)
-     */
-    @Override
-    public boolean equals(Object obj) {
-	if (this == obj)
-	    return true;
-	if (!super.equals(obj))
-	    return false;
-	if (getClass() != obj.getClass())
-	    return false;
-	Address other = (Address) obj;
-	if (apartment != other.apartment)
-	    return false;
-	if (building != other.building)
-	    return false;
-	if (city == null) {
-	    if (other.city != null)
-		return false;
-	} else if (!city.equals(other.city))
-	    return false;
-	if (street == null) {
-	    if (other.street != null)
-		return false;
-	} else if (!street.equals(other.street))
-	    return false;
-	return true;
-    }
-
-    /*
-     * (non-Javadoc)
-     * 
      * @see java.lang.Object#toString()
      */
     @Override
     public String toString() {
 	StringBuilder builder = new StringBuilder();
-	builder.append("Address [street=");
+	builder.append(city.getCountry().getName());
+	builder.append(", ");
+	builder.append(city.getName());
+	builder.append(", ");
 	builder.append(street);
-	builder.append(", building=");
+	builder.append(" street, ");
 	builder.append(building);
-	builder.append(", apartment=");
+	builder.append(" building, ");
 	builder.append(apartment);
-	builder.append(", city=");
-	builder.append(city);
-	builder.append("]");
+	builder.append(" ap. ");
 	return builder.toString();
     }
 

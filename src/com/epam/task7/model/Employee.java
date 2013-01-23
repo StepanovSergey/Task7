@@ -1,14 +1,35 @@
 package com.epam.task7.model;
 
+import java.util.Set;
+
 /**
  * @author Siarhei_Stsiapanau
  * 
  */
-public class Employee extends Basic {
+public class Employee {
+    private int id;
     private String firstName;
     private String lastName;
-    private Position position;
     private Address address;
+    private Set<Office> offices;
+
+    public Employee() {
+    }
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+	return id;
+    }
+
+    /**
+     * @param id
+     *            the id to set
+     */
+    public void setId(int id) {
+	this.id = id;
+    }
 
     /**
      * @return the firstName
@@ -41,21 +62,6 @@ public class Employee extends Basic {
     }
 
     /**
-     * @return the position
-     */
-    public Position getPosition() {
-	return position;
-    }
-
-    /**
-     * @param position
-     *            the position to set
-     */
-    public void setPosition(Position position) {
-	this.position = position;
-    }
-
-    /**
      * @return the address
      */
     public Address getAddress() {
@@ -70,60 +76,19 @@ public class Employee extends Basic {
 	this.address = address;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see java.lang.Object#hashCode()
+    /**
+     * @return the offices
      */
-    @Override
-    public int hashCode() {
-	final int prime = 31;
-	int result = super.hashCode();
-	result = prime * result + ((address == null) ? 0 : address.hashCode());
-	result = prime * result
-		+ ((firstName == null) ? 0 : firstName.hashCode());
-	result = prime * result
-		+ ((lastName == null) ? 0 : lastName.hashCode());
-	result = prime * result
-		+ ((position == null) ? 0 : position.hashCode());
-	return result;
+    public Set<Office> getOffices() {
+	return offices;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see java.lang.Object#equals(java.lang.Object)
+    /**
+     * @param offices
+     *            the offices to set
      */
-    @Override
-    public boolean equals(Object obj) {
-	if (this == obj)
-	    return true;
-	if (!super.equals(obj))
-	    return false;
-	if (getClass() != obj.getClass())
-	    return false;
-	Employee other = (Employee) obj;
-	if (address == null) {
-	    if (other.address != null)
-		return false;
-	} else if (!address.equals(other.address))
-	    return false;
-	if (firstName == null) {
-	    if (other.firstName != null)
-		return false;
-	} else if (!firstName.equals(other.firstName))
-	    return false;
-	if (lastName == null) {
-	    if (other.lastName != null)
-		return false;
-	} else if (!lastName.equals(other.lastName))
-	    return false;
-	if (position == null) {
-	    if (other.position != null)
-		return false;
-	} else if (!position.equals(other.position))
-	    return false;
-	return true;
+    public void setOffices(Set<Office> offices) {
+	this.offices = offices;
     }
 
     /*
@@ -134,15 +99,13 @@ public class Employee extends Basic {
     @Override
     public String toString() {
 	StringBuilder builder = new StringBuilder();
-	builder.append("Emloyee [firstName=");
 	builder.append(firstName);
-	builder.append(", lastName=");
+	builder.append(" ");
 	builder.append(lastName);
-	builder.append(", position=");
-	builder.append(position);
-	builder.append(", address=");
+	builder.append(", ");
 	builder.append(address);
-	builder.append("]");
+	builder.append(", ");
+	builder.append(offices);
 	return builder.toString();
     }
 
