@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_POSITION" id="73820622-E5F3-B132-7507-3F5AECEE61BC" directorySegmentName="seg_0">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 11:31:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<actions>INSERT</actions>
+<body>begin   &lt;br&gt;    select &quot;POSITION_SEQ&quot;.nextval into :NEW.ID_POSITION from dual; &lt;br&gt;end;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>4616C35C-FBC9-D700-9519-26364F711DB0</owner>
+<table>CB22D4F0-0A90-3726-8080-4B90066B3E44</table>
+</TriggerOraclev10g>

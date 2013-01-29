@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_EMPLOYEE" id="78EAF5C0-44A7-21CA-6193-BDA8267D3F03" directorySegmentName="seg_0">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 11:31:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<actions>INSERT</actions>
+<body>begin   &lt;br&gt;    select &quot;EMPLOYEE_SEQ&quot;.nextval into :NEW.ID_EMPLOYEE from dual; &lt;br&gt;end;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>4616C35C-FBC9-D700-9519-26364F711DB0</owner>
+<table>140FD614-2B45-3909-876F-28EE82A92914</table>
+</TriggerOraclev10g>

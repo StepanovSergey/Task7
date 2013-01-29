@@ -5,14 +5,19 @@
 
 <hibernate-mapping package="com.epam.task7.model">
 
-	<class name="Office" table="OFFICE">
-		<composite-id name="officePK" class="com.epam.task7.model.OfficePK">
-			<key-property name="company" type="integer" column="ID_COMPANY"></key-property>
+	<class name="Work" table="WORK">
+		<composite-id name="workPK" class="com.epam.task7.model.WorkPK">
+			<key-property name="office" type="integer" column="ID_OFFICE"></key-property>
 			<key-property name="employee" type="integer" column="ID_EMPLOYEE"></key-property>
-			<key-property name="address" type="integer" column="ID_ADDRESS"></key-property>
 		</composite-id>
+		<many-to-one name="office" class="com.epam.task7.model.Office"
+			column="id_office" fetch="join" not-null="true" />
 		<many-to-one name="position" class="com.epam.task7.model.Position"
 			column="id_position" fetch="join" not-null="true" />
+
+		<property name="countOfEmployees" lazy="false">
+			<formula>(SELECT COUNT(*) FROM WORK w WHERE w.ID_OFFICE=id_office)</formula>
+		</property>
 	</class>
 
 </hibernate-mapping>

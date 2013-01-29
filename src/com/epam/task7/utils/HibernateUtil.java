@@ -11,9 +11,12 @@ import org.hibernate.service.ServiceRegistryBuilder;
  * @author Siarhei_Stsiapanau
  * 
  */
-public class HibernateUtil {
+public final class HibernateUtil {
     private static final Logger log = Logger.getLogger(HibernateUtil.class);
     private static SessionFactory sessionFactory = buildSessionFactory();
+
+    private HibernateUtil() {
+    }
 
     private static SessionFactory buildSessionFactory() {
 	try {

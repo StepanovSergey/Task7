@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_COUNTRY" id="67D5F6D5-B15E-D78F-72AB-78C62A6CA2C4" directorySegmentName="seg_0">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 11:31:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<actions>INSERT</actions>
+<body>begin   &lt;br&gt;    select &quot;COUNTRY_SEQ&quot;.nextval into :NEW.ID_COUNTRY from dual; &lt;br&gt;end;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>4616C35C-FBC9-D700-9519-26364F711DB0</owner>
+<table>E7C98B3B-6F41-6E3F-9BE2-045703730B33</table>
+</TriggerOraclev10g>

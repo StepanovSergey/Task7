@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="3A7E68E5-D5B5-1F4D-F535-49F588A1EE8E" directorySegmentName="seg_0" name="COMPANY">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 08:27:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>3C1633CD-D75C-0E25-7708-636B0F2F1E95</importedID>
+<schemaObject>8D958E6E-135E-7C09-06EA-97526EE207FC</schemaObject>
+<pkName>COMPANY_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID_COMPANY" id="32E7117E-72CB-04C4-40CF-4A03C1BFFAA4">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 08:27:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>B993979B-8265-80E7-FB57-2E074D242005</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A172DB43-9399-1C29-4CD9-ACE0E4D2ED84</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="COMPANY_NAME" id="0ECBD550-AF7F-AE06-5EE3-04DB84ED8D20">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 08:27:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>11E93B6A-96A7-04AA-5F51-C8F3DCA134A0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9F1481BC-51A7-644B-82B0-5AB106BFD9F1</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="597927C2-6852-C9D3-E772-42CDB6AB1EA7" name="COMPANY_PK">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 08:27:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>4561165E-B25C-C253-6299-5732CEC512BA</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="32E7117E-72CB-04C4-40CF-4A03C1BFFAA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="C22B71FC-2402-B2D2-D653-125109AB7DD5" name="COMPANY_NAME_UNIQUE">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 08:27:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>A48F38B9-7AF1-8D58-2FD4-87907C22F1F1</importedID>
+<indexState>Unique Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="0ECBD550-AF7F-AE06-5EE3-04DB84ED8D20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="285FF32F-D5A5-F243-B1EF-DA84DC290016" name="COMPANY_PK">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 08:27:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>A137A8CC-7D7C-DF21-000F-FDDCBC0FD972</importedID>
+<schemaObject>8D958E6E-135E-7C09-06EA-97526EE207FC</schemaObject>
+<indexState>Unique Plain Index</indexState>
+<indexColumnUsage>
+<colUsage columnID="32E7117E-72CB-04C4-40CF-4A03C1BFFAA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="6CF0EACA-7BF8-C9C1-6CF8-90432BF1FC53" name="COMPANY_NAME_UNIQUE">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 08:27:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>B128186D-5E83-1D4F-3BD8-0949FB36180B</importedID>
+<schemaObject>8D958E6E-135E-7C09-06EA-97526EE207FC</schemaObject>
+<indexState>Unique Plain Index</indexState>
+<indexColumnUsage>
+<colUsage columnID="0ECBD550-AF7F-AE06-5EE3-04DB84ED8D20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

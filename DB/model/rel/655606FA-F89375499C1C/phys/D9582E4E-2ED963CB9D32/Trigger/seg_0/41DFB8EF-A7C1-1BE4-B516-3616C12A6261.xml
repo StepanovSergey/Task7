@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_CITY" id="41DFB8EF-A7C1-1BE4-B516-3616C12A6261" directorySegmentName="seg_0">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 11:31:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<actions>INSERT</actions>
+<body>begin   &lt;br&gt;    select &quot;CITY_SEQ&quot;.nextval into :NEW.ID_CITY from dual; &lt;br&gt;end;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>4616C35C-FBC9-D700-9519-26364F711DB0</owner>
+<table>510D0DBB-CA35-C087-BA30-A14393B5B8F2</table>
+</TriggerOraclev10g>

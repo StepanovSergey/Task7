@@ -5,40 +5,56 @@ package com.epam.task7.model;
  * 
  */
 public class Office {
-    private OfficePK officePK;
-    private Position position;
+    private int id;
+    private Company company;
+    private Address address;
 
     public Office() {
     }
 
     /**
-     * @return the officePK
+     * @return the id
      */
-    public OfficePK getOfficePK() {
-	return officePK;
+    public int getId() {
+	return id;
     }
 
     /**
-     * @param officePK
-     *            the officePK to set
+     * @param id
+     *            the id to set
      */
-    public void setOfficePK(OfficePK officePK) {
-	this.officePK = officePK;
+    public void setId(int id) {
+	this.id = id;
     }
 
     /**
-     * @return the position
+     * @return the company
      */
-    public Position getPosition() {
-	return position;
+    public Company getCompany() {
+	return company;
     }
 
     /**
-     * @param position
-     *            the position to set
+     * @param company
+     *            the company to set
      */
-    public void setPosition(Position position) {
-	this.position = position;
+    public void setCompany(Company company) {
+	this.company = company;
+    }
+
+    /**
+     * @return the address
+     */
+    public Address getAddress() {
+	return address;
+    }
+
+    /**
+     * @param address
+     *            the address to set
+     */
+    public void setAddress(Address address) {
+	this.address = address;
     }
 
     /*
@@ -49,10 +65,13 @@ public class Office {
     @Override
     public String toString() {
 	StringBuilder builder = new StringBuilder();
-	builder.append(officePK);
-	builder.append(", ");
-	builder.append(position);
-	builder.append(" ");
+	builder.append("Office [id=");
+	builder.append(id);
+	builder.append(", company=");
+	builder.append(company);
+	builder.append(", address=");
+	builder.append(address);
+	builder.append("]");
 	return builder.toString();
     }
 

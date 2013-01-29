@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="7081D95A-CDE6-98E7-C1E2-A8A59B81FBD9" directorySegmentName="seg_0" name="WORK">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 11:31:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>3D4C7160-B344-4314-7D36-5A92C69FDB6D</importedID>
+<schemaObject>27BC4542-B799-8428-EAF6-DD2826FE4CC1</schemaObject>
+<pkName>WORK_PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID_OFFICE" id="A665A044-62B6-5D67-0DE9-C45D6AC96EB5">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 11:31:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>C7A58009-0B32-791A-EE4A-3463D31B7B65</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A172DB43-9399-1C29-4CD9-ACE0E4D2ED84</domain>
+<delegate>84B8271D-0471-5402-E2C5-E980270E6662</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8CAB247F-C00B-5EFE-DC68-78D32A835501" referredColumn="84B8271D-0471-5402-E2C5-E980270E6662"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID_EMPLOYEE" id="52834300-07F7-4294-59A8-4CCB28AD7A07">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 11:31:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>796248DD-B9A0-5AB9-C359-8F4D783EA3EA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A172DB43-9399-1C29-4CD9-ACE0E4D2ED84</domain>
+<delegate>52A9A1BC-87D2-DCE9-C014-65AC857935E8</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B0B2A82-1378-7D92-71C8-A1CCF0073E25" referredColumn="52A9A1BC-87D2-DCE9-C014-65AC857935E8"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ID_POSITION" id="F4A5F277-E5DE-A218-E323-CB5CB89F2DB9">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 11:31:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<importedID>E4F52FC7-3D01-453A-79B8-3CC6B3FE479F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A172DB43-9399-1C29-4CD9-ACE0E4D2ED84</domain>
+<delegate>D885C84B-51C5-7BA3-3000-74F9CC551131</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9CBD1F5-6E3C-2315-A696-BA097E8B2A75" referredColumn="D885C84B-51C5-7BA3-3000-74F9CC551131"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="583F5E36-2F39-E0CC-0A68-8E3A1BCE7F37" name="WORK_PK">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-29 07:16:56 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="A665A044-62B6-5D67-0DE9-C45D6AC96EB5"/>
+<colUsage columnID="52834300-07F7-4294-59A8-4CCB28AD7A07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="291992FF-2F78-ACDC-5237-B8A8BCF84FA2" name="FK28BF1156050887">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 11:31:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="A665A044-62B6-5D67-0DE9-C45D6AC96EB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="D3F6F6B5-D03E-4D07-F5A0-73C219232218" name="FK28BF119D4535A1">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 11:31:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="F4A5F277-E5DE-A218-E323-CB5CB89F2DB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="CCCFE2ED-5B38-1E34-1D9F-E928A13FF986" name="FK28BF11D265D0AB">
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 11:31:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="52834300-07F7-4294-59A8-4CCB28AD7A07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

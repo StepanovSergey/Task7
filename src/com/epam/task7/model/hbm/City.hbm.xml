@@ -14,7 +14,7 @@
 		<property name="name" type="string" column="CITY_NAME"
 			not-null="true" unique="true" />
 		<many-to-one name="country" class="com.epam.task7.model.Country"
-			column="id_country" fetch="join" not-null="true" foreign-key="CITY_FK" />
+			column="id_country" fetch="join" lazy="false" not-null="true" foreign-key="CITY_FK" />
 	</class>
 
 </hibernate-mapping>

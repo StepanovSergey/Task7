@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="model" id="5FA402C5-3994-2C76-0D6D-834E0494C433" version="3.5">
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="model" id="D0F9A501-33E0-65DC-3DCE-CE0A472AD456" version="3.5">
 <createdBy>Siarhei_Stsiapanau</createdBy>
-<createdTime>2013-01-23 15:27:11 UTC</createdTime>
+<createdTime>2013-01-28 08:25:30 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <capitalNames>false</capitalNames>
-<designId>5FA402C5-3994-2C76-0D6D-834E0494C433</designId>
+<designId>D0F9A501-33E0-65DC-3DCE-CE0A472AD456</designId>
 </OSDM_Design>

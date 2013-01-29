@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_OFFICE" id="441E2B01-1C73-B16E-AD81-586B45590B15" directorySegmentName="seg_0">
+<sourceDDLFile>all.sql</sourceDDLFile>
+<createdBy>Siarhei_Stsiapanau</createdBy>
+<createdTime>2013-01-28 11:31:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<actions>INSERT</actions>
+<body>begin   &lt;br&gt;    select &quot;OFFICE_SEQ&quot;.nextval into :NEW.ID_OFFICE from dual; &lt;br&gt;end;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>4616C35C-FBC9-D700-9519-26364F711DB0</owner>
+<table>A9F0F9AB-4879-AB18-24D2-DDFC8376DF64</table>
+</TriggerOraclev10g>

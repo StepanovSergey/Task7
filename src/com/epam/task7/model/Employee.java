@@ -1,19 +1,36 @@
 package com.epam.task7.model;
 
+import java.io.Serializable;
 import java.util.Set;
 
 /**
  * @author Siarhei_Stsiapanau
  * 
  */
-public class Employee {
+public class Employee implements Serializable {
+    private static final long serialVersionUID = 4462945517583558083L;
     private int id;
     private String firstName;
     private String lastName;
     private Address address;
-    private Set<Office> offices;
+    private Set<Work> works;
 
     public Employee() {
+    }
+
+    /**
+     * @return the works
+     */
+    public Set<Work> getWorks() {
+	return works;
+    }
+
+    /**
+     * @param works
+     *            the works to set
+     */
+    public void setWorks(Set<Work> works) {
+	this.works = works;
     }
 
     /**
@@ -76,21 +93,6 @@ public class Employee {
 	this.address = address;
     }
 
-    /**
-     * @return the offices
-     */
-    public Set<Office> getOffices() {
-	return offices;
-    }
-
-    /**
-     * @param offices
-     *            the offices to set
-     */
-    public void setOffices(Set<Office> offices) {
-	this.offices = offices;
-    }
-
     /*
      * (non-Javadoc)
      * 
@@ -99,14 +101,17 @@ public class Employee {
     @Override
     public String toString() {
 	StringBuilder builder = new StringBuilder();
+	builder.append("Employee [id=");
+	builder.append(id);
+	builder.append(", firstName=");
 	builder.append(firstName);
-	builder.append(" ");
+	builder.append(", lastName=");
 	builder.append(lastName);
-	builder.append(", ");
+	builder.append(", address=");
 	builder.append(address);
-	builder.append(", ");
-	builder.append(offices);
+	builder.append(", works=");
+	builder.append(works);
+	builder.append("]");
 	return builder.toString();
     }
-
 }

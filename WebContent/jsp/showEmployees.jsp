@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,24 +30,49 @@
 		<!-- End header -->
 		<!-- Start content -->
 		<div class="container">
-			OUT: ${object }
+		<%--  ${employeeList } --%>
 			<table class="table table-striped table-bordered">
 				<caption>List of employees</caption>
 				<thead>
 					<tr>
-						<td>head123</td>
-						<td>head123</td>
+						<th>#</th>
+						<th>Employee Name</th>
+						<th>Employee Address</th>
+						<th>Work</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>123</td>
-						<td>123</td>
-					</tr>
-					<tr>
-						<td>123</td>
-						<td>123</td>
-					</tr>
+					<c:forEach items="${employeeList }" var="employee"
+						varStatus="statusEmployee">
+
+						<tr>
+							<td>${statusEmployee.count }</td>
+							<td>${employee.firstName } ${employee.lastName }</td>
+							<td>${employee.address.city.country.name },
+								${employee.address.city.name }, ${employee.address.street}
+								street, ${employee.address.building }
+								<c:if test="${employee.address.apartment != 0}">
+								,${employee.address.apartment} ap.
+								</c:if>
+								</td>
+							<td><c:forEach items="${employee.works }" var="work"
+									varStatus="statusWork">
+									<p>
+										Company: ${work.office.company.name }<br> Company Address:
+										${work.office.address.city.country.name },
+										${work.office.address.city.name }, ${work.office.address.street} street,
+										${work.office.address.building }
+										<c:if test="${work.office.address.apartment != 0}">
+										, ${work.office.address.apartment} ap.
+										</c:if>
+										<br> Number of employees: ${work.countOfEmployees }<br>
+										Position: ${work.position.name }
+									</p>
+
+								</c:forEach></td>
+						</tr>
+					</c:forEach>
+
 				</tbody>
 			</table>
 		</div>

@@ -60,20 +60,21 @@ public class City {
 	this.country = country;
     }
 
-    /*
-     * (non-Javadoc)
-     * 
+    /* (non-Javadoc)
      * @see java.lang.Object#toString()
      */
     @Override
     public String toString() {
 	StringBuilder builder = new StringBuilder();
-	builder.append("City ");
+	builder.append("City [id=");
+	builder.append(id);
+	builder.append(", name=");
 	builder.append(name);
-	builder.append(", ");
+	builder.append(", country=");
 	builder.append(country);
-	builder.append(" ");
+	builder.append("]");
 	return builder.toString();
     }
+
 
 }

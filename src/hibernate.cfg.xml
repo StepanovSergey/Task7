@@ -5,40 +5,50 @@
 
 <hibernate-configuration>
 
-    <session-factory>
+	<session-factory>
 
-        <!-- Database connection settings -->
-        <property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
-        <property name="connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>
-        <property name="connection.username">system</property>
-        <property name="connection.password">root</property>
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
+		<property name="connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>
+		<property name="connection.username">system</property>
+		<property name="connection.password">root</property>
 
-        <!-- JDBC connection pool (use the built-in) -->
-        <property name="connection.pool_size">5</property>
+		<!-- JDBC connection pool (use the built-in) -->
+		<property name="connection.pool_size">5</property>
 
-        <!-- SQL dialect -->
-        <property name="dialect">org.hibernate.dialect.OracleDialect</property>
+		<!-- SQL dialect -->
+		<property name="dialect">org.hibernate.dialect.OracleDialect</property>
 
-        <!-- Enable Hibernate's automatic session context management -->
-        <property name="current_session_context_class">thread</property>
+		<!-- Enable Hibernate's automatic session context management -->
+		<property name="current_session_context_class">thread</property>
 
-        <!-- Disable the second-level cache  -->
-        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+		<!-- Disable the second-level cache -->
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
 
-        <!-- Echo all executed SQL to stdout -->
-        <property name="show_sql">true</property>
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="use_sql_comments">true</property>
 
-        <!-- Drop and re-create the database schema on startup -->
-        <property name="hbm2ddl.auto">update</property>
+		<!-- Enable generated keys -->
+		<property name="hibernate.jdbc.use_get_generated_keys">true</property>
 
-        <mapping resource="com/epam/task7/model/Country.hbm.xml"/>
-        <mapping resource="com/epam/task7/model/City.hbm.xml"/>
-        <mapping resource="com/epam/task7/model/Address.hbm.xml"/>
-        <mapping resource="com/epam/task7/model/Employee.hbm.xml"/>
-        <mapping resource="com/epam/task7/model/Position.hbm.xml"/>
-        <mapping resource="com/epam/task7/model/Company.hbm.xml"/>
-        <mapping resource="com/epam/task7/model/Office.hbm.xml"/>
+		<!-- Fetch size -->
+		<property name="hibernate.jdbc.fetch_size">5</property>
+		<property name="hibernate.jdbc.batch_size">5</property>
 
-    </session-factory>
+		<!-- Drop and re-create the database schema on startup -->
+		<property name="hbm2ddl.auto">update</property>
+
+		<mapping resource="com/epam/task7/model/hbm/Country.hbm.xml" />
+		<mapping resource="com/epam/task7/model/hbm/City.hbm.xml" />
+		<mapping resource="com/epam/task7/model/hbm/Address.hbm.xml" />
+		<mapping resource="com/epam/task7/model/hbm/Employee.hbm.xml" />
+		<mapping resource="com/epam/task7/model/hbm/Position.hbm.xml" />
+		<mapping resource="com/epam/task7/model/hbm/Company.hbm.xml" />
+		<mapping resource="com/epam/task7/model/hbm/Office.hbm.xml" />
+		<mapping resource="com/epam/task7/model/hbm/Work.hbm.xml" />
+
+	</session-factory>
 
 </hibernate-configuration>

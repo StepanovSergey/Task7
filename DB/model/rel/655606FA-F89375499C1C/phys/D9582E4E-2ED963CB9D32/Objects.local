@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.storage.oracle.v10g.StorageDesignOraclev10g>
+   <object objectType="User" objectID="MDSYS" name="MDSYS" seqName="seg_0"/>
+   <object objectType="User" objectID="PUBLIC" name="PUBLIC" seqName="seg_0"/>
+   <object objectType="User" objectID="4616C35C-FBC9-D700-9519-26364F711DB0" name="SYSTEM" seqName="seg_0"/>
+   <object objectType="SType" objectID="47E390DE-0671-C4B1-8428-0F45CBEE18F8" name="SDO_GEOMETRY" seqName="seg_0"/>
+   <object objectType="SType" objectID="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" name="XMLTYPE" seqName="seg_0"/>
+   <object objectType="Table" objectID="140FD614-2B45-3909-876F-28EE82A92914" name="EMPLOYEE" seqName="seg_0"/>
+   <object objectType="Table" objectID="510D0DBB-CA35-C087-BA30-A14393B5B8F2" name="CITY" seqName="seg_0"/>
+   <object objectType="Table" objectID="7081D95A-CDE6-98E7-C1E2-A8A59B81FBD9" name="WORK" seqName="seg_0"/>
+   <object objectType="Table" objectID="79CCAB17-6002-4C0C-43A5-BF6774CBDC0D" name="ADDRESS" seqName="seg_0"/>
+   <object objectType="Table" objectID="A9F0F9AB-4879-AB18-24D2-DDFC8376DF64" name="OFFICE" seqName="seg_0"/>
+   <object objectType="Table" objectID="CB22D4F0-0A90-3726-8080-4B90066B3E44" name="POSITION" seqName="seg_0"/>
+   <object objectType="Table" objectID="E7C98B3B-6F41-6E3F-9BE2-045703730B33" name="COUNTRY" seqName="seg_0"/>
+   <object objectType="Table" objectID="ECF75806-E2CC-9494-4C7C-4514F5DDA0FE" name="COMPANY" seqName="seg_0"/>
+   <object objectType="Segment" objectID="51A6D1EA-0FA2-5743-EDCE-12E614D0BEAB" name="Storage1" seqName="seg_0"/>
+   <object objectType="Segment" objectID="6AFD4981-B489-330F-619D-F11482143757" name="Storage16" seqName="seg_0"/>
+   <object objectType="Segment" objectID="85589E27-1A9A-BE67-5D24-0F57012867EE" name="Storage9" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="248A69F2-9234-68AD-3624-F5CB61E6EE6B" name="BI_ADDRESS" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="41DFB8EF-A7C1-1BE4-B516-3616C12A6261" name="BI_CITY" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="4D6030F0-BAE4-1825-EF27-6CCE09ABD878" name="BI_COMPANY" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="67D5F6D5-B15E-D78F-72AB-78C62A6CA2C4" name="BI_COUNTRY" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="78EAF5C0-44A7-21CA-6193-BDA8267D3F03" name="BI_EMPLOYEE" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="441E2B01-1C73-B16E-AD81-586B45590B15" name="BI_OFFICE" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="73820622-E5F3-B132-7507-3F5AECEE61BC" name="BI_POSITION" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.storage.oracle.v10g.StorageDesignOraclev10g>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="SchemaObject" objectID="8D958E6E-135E-7C09-06EA-97526EE207FC" name="SYSTEM" seqName="seg_0"/>
+   <object objectType="Table" objectID="D7CD53C1-9D25-6466-B8B1-84CA93183FEE" name="ADDRESS" seqName="seg_0"/>
+   <object objectType="Table" objectID="FA2F644F-5197-3051-B114-383510CCA4F2" name="CITY" seqName="seg_0"/>
+   <object objectType="Table" objectID="3A7E68E5-D5B5-1F4D-F535-49F588A1EE8E" name="COMPANY" seqName="seg_0"/>
+   <object objectType="Table" objectID="55BCED60-512C-0E05-FC8A-F83740912439" name="COUNTRY" seqName="seg_0"/>
+   <object objectType="Table" objectID="CF2D77BB-1BD5-70A7-47B2-108222AC3ADA" name="EMPLOYEE" seqName="seg_0"/>
+   <object objectType="Table" objectID="835B281D-D270-2C59-09BE-B6B4AB3661AC" name="OFFICE" seqName="seg_0"/>
+   <object objectType="Table" objectID="70990F91-4D36-E0F1-CC8E-EE5FC1A35261" name="POSITION" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="BA801506-D7ED-F5CD-E8F6-07FEAECB8D53" name="ADDRESS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="154133DC-F5AC-8B42-CCC9-0F2525DC0B2C" name="CITY_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="5A0F74DF-F213-7B3E-5196-5C05E96D2479" name="FK75C8D6AE6DA33B" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="97AA49D2-B064-AF02-9290-9C8302622D06" name="OFFICE_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="2869228F-3788-7CE3-1A92-48DB7AC5E88C" name="OFFICE_FK2" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="3DE25C49-A3E8-D466-6483-3AF54088384A" name="OFFICE_FK3" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9A296268-C3F3-2721-515F-9E6025023F05" name="OFFICE_FK3v1" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

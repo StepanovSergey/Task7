@@ -15,13 +15,14 @@
 			not-null="true" />
 		<property name="lastName" type="string" column="LASTNAME"
 			not-null="true" />
-		<one-to-one name="address" class="com.epam.task7.model.Address"
-			fetch="join"></one-to-one>
+		<many-to-one name="address" class="com.epam.task7.model.Address"
+			column="id_address" fetch="join" lazy="false"></many-to-one>
 
-		<set name="offices" batch-size="100" lazy="false" fetch="join">
-			<key column="id_employee"  />
-			<one-to-many class="com.epam.task7.model.Office" />
+		<set name="works" fetch="join" lazy="false" batch-size="100" >
+			<key column="id_employee" />
+			<one-to-many class="com.epam.task7.model.Work" />
 		</set>
+
 	</class>
 
 </hibernate-mapping>
