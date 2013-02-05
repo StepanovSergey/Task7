@@ -21,10 +21,10 @@ public final class EmployeeHibernateDao {
     public List<Employee> getEmployees() {
 	Session session = SESSION_FACTORY.getCurrentSession();
 	Transaction transaction = session.beginTransaction();
-	Query criteria = session.createQuery("select distinct e from Employee e");
-	criteria.setMaxResults(100);
+	Query query = session.createQuery("select distinct e from Employee e");
+	query.setMaxResults(100);
 	long startTime = System.currentTimeMillis();
-	List<Employee> list = criteria.list();
+	List<Employee> list = query.list();
 	long endTime = System.currentTimeMillis();
 	double time = (endTime - startTime) / 1000D;
 	System.out.println("Time for query: " + time);
